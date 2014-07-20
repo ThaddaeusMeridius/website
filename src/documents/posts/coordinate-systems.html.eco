@@ -1,0 +1,40 @@
+```
+title: Coordinate Systems
+layout: default
+tags: ['geometric','coordinates','c']
+```
+
+$\def\vector{\bf\vec}$
+$\def\({\left(}$
+$\def\){\right)}$
+$\def\{{\left\lbrace}$
+$\def\}{\right\rbrace}$
+$\def\[{\left[}$
+$\def\]{\right]}$
+
+<h2 class="article-title">Polar Coordinates</h2>
+<p class="fenix">
+$$x = r \cos{\theta}, \ \ y= r\sin{\theta}$$
+$$\frac{\partial}{\partial x} = \cos{\theta}\frac{\partial}{\partial r} - \frac{\sin{\theta}}{r} \frac{\partial}{\partial \theta}$$
+$$\frac{\partial}{\partial y} = \sin{\theta}\frac{\partial}{\partial r} + \frac{\cos{\theta}}{r} \frac{\partial}{\partial \theta}$$
+$$\nabla^2f= \frac{\partial^2f}{\partial x^2} + \frac{\partial^2f}{\partial y^2} = \frac{\partial^2f}{\partial r^2} + \frac{1}{r} \frac{\partial f}{\partial r} + \frac{1}{r^2} \frac{\partial^2 f}{\partial \theta^2}$$
+</p>
+
+<h2 class="article-title">Cylindrical Coordinates</h2>
+<p class="fenix">
+$$x=r\cos{\theta}, \ \ y=r\sin{\theta}, \ \ z=z$$
+$$\frac{\partial}{\partial x} = \cos{\theta}\frac{\partial}{\partial r} - \frac{\sin{\theta}}{r} \frac{\partial}{\partial \theta}$$
+$$\frac{\partial}{\partial y} = \sin{\theta}\frac{\partial}{\partial r} + \frac{\cos{\theta}}{r} \frac{\partial}{\partial \theta}$$
+$$\nabla^2f= \frac{\partial^2f}{\partial x^2} + \frac{\partial^2f}{\partial y^2} + \frac{\partial^2f}{\partial z^2} = \frac{\partial^2f}{\partial r^2} + \frac{1}{r} \frac{\partial f}{\partial r} + \frac{1}{r^2} \frac{\partial^2 f}{\partial \theta^2} + \frac{\partial^2f}{\partial z^2}$$
+</p>
+
+<h2 class="article-title">Spherical Coordinates</h2>
+<p class="fenix">
+$$x=\rho \sin{\phi}\cos{\theta}, \ \ y=\rho \sin{\phi}\sin{\theta}, \ \ z= \rho \cos{\phi}$$
+$$
+\begin{align}
+\nabla^2 &= \frac{\partial^2f}{\partial x^2} + \frac{\partial^2f}{\partial y^2} + \frac{\partial^2f}{\partial z^2}\\
+		&= \frac{1}{\rho^2}\frac{\partial}{\partial \rho} \( \rho^2 \frac{\partial f}{\partial \rho} \) + \frac{1}{\rho^2 \sin^2{}\phi} \frac{\partial^2f}{\partial \theta^2} + \frac{1}{\rho^2 \sin{\phi}} \frac{\partial}{\partial \phi} \( \sin{\phi} \frac{\partial f}{\partial \phi} \)
+\end{align}
+$$
+</p>

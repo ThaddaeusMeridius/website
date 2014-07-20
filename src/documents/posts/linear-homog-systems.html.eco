@@ -1,0 +1,117 @@
+```
+title: Linear Homogeneous Systems
+layout: default
+tags: ['diffeq','linear','firstorder','homogeneous','l','analytic','ode']
+```
+
+<h2 class="article-title">Example</h2>
+<p class="fenix">
+Suppose we have the system 
+$$
+\begin{align}
+x' &= x+3y \\
+y' &= x-y
+\end{align}
+$$
+Using linear algebra, we can write this system as
+
+$$
+\left(
+\begin{matrix}
+x' \\ y'
+\end{matrix}
+\right)
+=
+\left(
+\begin{matrix}
+1 & 3 \\
+1 & -1
+\end{matrix}
+\right)
+\left(
+\begin{matrix}
+x \\ y
+\end{matrix}
+\right) \tag{1}
+$$
+The system is now in the form
+$$\vec{\mathbf{x}}\: ' = \vec{\mathbf{A}} \, \vec{\mathbf{x}}$$
+We then find the systems eigenvalues and eigenvectors by solving
+$$\left( \vec{\mathbf{A}} - \lambda \, \vec{\mathbf{I}} \right) \vec{\mathbf{x}} = \vec{\mathbf{0}}$$
+This equation has nonzero solutions $\iff$ $\lambda$ is chosen such that it satisfies
+$$\mathrm{det} \left( \vec{\mathbf{A}} - \lambda \, \vec{\mathbf{I}} \right) = 0$$
+Solving we get
+$$
+\left| \,
+\begin{matrix}
+1 - \lambda & 3 \\
+1 & -1-\lambda \,
+\end{matrix}
+\right|
+=0 \tag{2}$$
+$$
+\lambda^2 - 4 =0
+$$
+So $\lambda_1 = 2$ and $\lambda_2 = -2$. To find the eigenvectors, we plug each eigenvalue into $(2)$. 
+<br>
+<br>
+$\underline{\lambda_1 = 2}$
+
+$$
+\left( \,
+\begin{matrix}
+-1 & 3 \\
+1 & -3 \,
+\end{matrix}
+\right)
+\left(
+\begin{matrix}
+x \\ y
+\end{matrix}
+\right)
+=
+\left(
+\begin{matrix}
+0 \\ 0
+\end{matrix}
+\right)
+$$
+This becomes
+$$
+\begin{align}
+-x + 3y &= 0 \\
+x-3y &= 0
+\end{align}
+$$
+We see that to solve this, $x=3$ and $y=1$, so our first eigenvector is
+$$
+\vec{\mathbf{x}}^{(1)} = \left( \begin{matrix} 3 \\ 1 \end{matrix} \right)
+$$
+
+$\underline{\lambda_2 = -2}$
+
+$$
+\left( \,
+\begin{matrix}
+3 & 3 \\
+1 & 1 \,
+\end{matrix}
+\right)
+\left(
+\begin{matrix}
+x \\ y
+\end{matrix}
+\right)
+=
+\left(
+\begin{matrix}
+0 \\ 0
+\end{matrix}
+\right)
+$$
+This simply becomes the eigenvector
+$$\vec{\mathbf{x}}^{(2)} = \left( \begin{matrix} 1 \\ -1 \end{matrix} \right)$$
+
+And thus, our general solution to the system $(1)$ is 
+$$\vec{\mathbf{x}} = c_1 \left( \begin{matrix} 3 \\ 1 \end{matrix} \right) \, e^{2t} + c_2 \left( \begin{matrix} 1 \\ -1 \end{matrix} \right) \, e^{-2t}$$
+</p>

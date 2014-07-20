@@ -1,0 +1,8 @@
+```
+title: Complex Differentiation
+layout: post
+tags: ['analytic','complex','c','complexanalysis']
+```
+
+
+$$f' \left( z \right) = \frac{df}{dz} = \lim_{h \to 0} \frac{f \left( z+h \right) - f\left( z \right)}{h}$$

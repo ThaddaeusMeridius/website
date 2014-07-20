@@ -1,0 +1,22 @@
+```
+title: Partial Fractions
+layout: default
+tags: ['algebraic','partialfractions','p']
+```
+
+$\def\vector{\bf\vec}$
+$\def\({\left(}$
+$\def\){\right)}$
+$\def\{{\left\lbrace}$
+$\def\}{\right\rbrace}$
+$\def\[{\left[}$
+$\def\]{\right]}$
+
+$$\frac{f \(x \)}{\(x- \alpha_1 \)\( x- \alpha_2 \) \cdots \( x-\alpha_n \)} = \frac{A_1}{\(x- \alpha_1 \)} + \frac{A_2}{\(x- \alpha_2 \)} + \cdots + \frac{A_n}{\(x- \alpha_n \)}$$
+Where
+$$A_i = \frac{f \( \alpha_i \)}{\prod\limits_{k \neq i}^n \( \alpha_i - \alpha_k \)}$$
+
+Also,
+$$\frac{f \( x \)}{\( x-\alpha_1 \)^n}= \frac{B_1}{x-\alpha_1} + \frac{B_2}{\( x- \alpha_1 \)^2} + \cdots + \frac{B_n}{\( x- \alpha_1 \)^n}$$
+Where
+$$B_i = \frac{f^{\( n-i \)} \( \alpha_1 \)}{\( n-i \)!}$$

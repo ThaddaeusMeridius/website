@@ -1,0 +1,34 @@
+```
+title: Lebesgue Integration
+layout: default
+tags: ['integral','lebesgue','l','realfunctions','analytic','calculus']
+```
+
+<p>
+Lebesgue integration allows us to find the area under some very strange curves, in which Riemann integration is not doable 
+##Lebesgue Dominating Convergence Theorem##
+$$\lim_{n \to \infty} \int f_n = \int \lim_{n \to \infty} f_n$$
+<h2 class="article-title">Theorema</h2>
+From Real Analysis, we know that 
+$$\lim_{n \to \infty} \int f_n \left( x \right) = \int f_n \left( x \right)$$
+So, let $g \left( x \right)$ be a Lebesgue integrable function on a measurable set $S$ and let $\left\lbrace f_n \left(x \right) \right\rbrace$ be a sequence of Lebesgue integrable functions on $S$ with $\left| f_n \left( x \right) \right| \leq g \left( x \right)$ for all x in $S$ and such that there is a pointwise limit of the $f_n \left( x \right)$, ie., there is a function $f \left( x \right)$ with 
+
+$$f \left(x \right) = \lim_{n \to \infty} f_n \left( x \right)$$
+Then 
+$$\int_S \lim_{n \to \infty} f_n \left( x \right) = \lim_{n \to \infty} \int_S f_n \left( x \right)$$
+ 
+<h2 class="article-title">Definition 1</h2>
+
+A function $f: S \to \mathbb{R} \cup \left( \infty \right) \cup \left( -\infty \right)$ is measurable if its domain $S$ is measurable and if, for any fixed $\alpha \in \mathbb{R} \cup \left( \infty \right) \cup \left( -\infty \right)$,
+$$\left\lbrace x \in S: f \left(x \right) = \alpha \right\rbrace$$
+is measurable
+
+<h2 class="article-title">Definition 2</h2>
+Let $f$ be a measurable function on $S$. Then the Lebesgue integral of $f$ on $S$ is
+
+
+$$\int_S f = \inf \left\lbrace \int_S \sum a_i \, \chi_{A_i} : for \ all \ x \in S, \sum a_i \chi_{A_i} \left( x \right) \geq f \left( x \right) \right\rbrace$$
+
+<h2 class="article-title">Example</h2>
+Suppose we have the function $f: \left[ 0,1 \right] \to \left[0,1\right]$, which is just $1$ at every rational and $0$ at every irrational. This function has no Riemann integral, but its Lebesgue integral is
+$$\int_{\left[0,1\right]} f = 0$$</p>

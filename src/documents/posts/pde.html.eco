@@ -1,0 +1,26 @@
+```
+title: Partial Differential Equations
+layout: default
+tags: ['analytic', 'p','diffeq','pde']
+```
+<p>
+A PDE is an equation for a function for a function, $f$, and its derivatives. Given $f\left(x_1, \dots, x_n \right)$ defined on $\mathbb{R}^n$, let's write $f_i$ for the partial derivative $\frac{\partial f}{\partial x_i}$. We then can write a PDE as
+$$F \left( f, f_1, f_2, \dots, f_n, f_{11}, f_{12}, \dots, f_{nn}, \dots, f_{i_1 1_2 \dots i_k}, x_1, \dots, x_n \right)$$
+<hr>
+Some PDE's are:
+<br>
+The Laplace Equation
+$$\Delta f = 0$$
+The eigenfunction equation
+$$\Delta f = -\lambda f \qquad \lambda \mathrm{\ constant}$$
+The heat equation
+
+$$f_t = f_{xx} \qquad \mathrm{ for \ } f\left(x,t\right)$$
+The wave equation
+$$f_{tt} = f_{xx} \qquad \mathrm{ for \ } f\left(x,t\right)$$
+The Black-Scholes equation
+$$f_f + \tfrac{1}{2} \sigma^2 x^2 f_{xx} + rxf_x - rf = 0 \qquad\mathrm{\ for \ } f\left(x,t\right)$$
+The Airy Equation
+$$f+t+f_{xxx} = 0$$
+<hr>
+</p>

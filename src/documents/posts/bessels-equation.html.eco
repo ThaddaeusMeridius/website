@@ -1,0 +1,30 @@
+```
+title: Bessel's Equation
+layout: default
+tags: ['diffeq', 'bessel','b','analytic','ode']
+```
+<p class="fenix">
+$$x^2 \frac{d^2y}{dx^2} + x \frac{dy}{dx} + \left( x^2 - v^2 \right)y =0 \tag{1}\label{1}$$
+Or
+$$\frac{d^2y}{dx^2} + \frac{1}{x} \frac{dy}{dx} + \left( 1 - \frac{v^2}{x^2} \right)y = 0 \tag{2}\label{2}$$
+
+A more compact version of this is 
+$$x^2 y'' + xy' + \left( x^2 - v^2 \right) y=0 \tag{3}\label{3}$$
+
+When we talk about Bessel functions, we usually refer to its order. For example, a Bessel Equation of Order Zero is
+$$x^2y'' + xy' + x^2y = 0 \tag{4}\label{4}$$
+since $v=0$ 
+
+Where it's first solution is 
+$$y_1(x) = a_0 \left\lbrack 1 + \sum\limits_{m=1}^{\infty} \frac{\left( -1 \right)^m a_0}{2^{2m} \left( m! \right)^2} \right\rbrack$$
+
+for $x \gt 0$. The function in the brackets is known as the Bessel function of the first kind of order zero and is denoted by $J_0(x)$
+
+ It's second solution is 
+ $$y_2(x) = J_0(x) \ln{x} + \sum\limits_{m=1}^{\infty} \frac{\left( -1 \right)^{m+1} H_m}{2^{2m} \left( m! \right)^2} \ x^{2m} $$
+for $x \gt 0$. The function is denoted by $Y_0(x)$ and is known as the Bessel function of the second kind of order zero.
+
+The general solution of a Bessel equation of Order Zero ends up being
+$$y = c_1 J_0(x) + c_2 Y_0(x)$$
+for $x \gt 0$
+</p>

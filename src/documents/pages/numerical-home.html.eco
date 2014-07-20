@@ -1,0 +1,15 @@
+```
+title: Numerical Analysis and Optimization
+layout: default
+```
+<div class="pages-list">
+	<ul>
+<% for page in @getCollection("html").findAll(tags: $has: ['numericalanalysis']).toJSON(): %>
+
+		<li>
+	        <a class="<%- if page.id is @document.id then 'nav_selected' else '' %>" href="<%= page.url %>"><%= page.title %></a>
+	    </li>    
+
+<% end %>
+    </ul>
+</div>

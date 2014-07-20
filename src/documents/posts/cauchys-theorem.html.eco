@@ -1,0 +1,8 @@
+```
+title: Cauchy's Theorem
+layout: default
+tags: ['complex','c','complexanalysis']
+```
+
+If $f(z)$ is continuous within and on a simple closed contour $C$ and analytic within $C$, then
+$$\int_C f(z) \ dz = 0$$

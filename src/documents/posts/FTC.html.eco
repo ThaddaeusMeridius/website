@@ -1,0 +1,17 @@
+```
+title: Fundamental Theorem of Calculus
+layout: default
+tags: ['diffcalc', 'calculus','analytic','f']
+```
+$\def\vector{\bf\vec}$
+$\def\({\left(}$
+$\def\){\right)}$
+$\def\{{\left\lbrace}$
+$\def\}{\right\rbrace}$
+$\def\[{\left[}$
+$\def\]{\right]}$
+
+<p class="fenix">
+$$\int_a^b f \(x \) \ dx = F \(b \) - F \(a\) \tag{1}$$
+$$\frac{d}{dx} \int_a^x f \( t \) \ dt = f \( x \) \tag{2}$$
+</p>

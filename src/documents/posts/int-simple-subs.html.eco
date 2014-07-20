@@ -1,0 +1,26 @@
+```
+title: Simple Substitution
+layout: default
+tags: ['integral','substitution','s','analytic','integration']
+```
+
+<p class="fenix">
+If
+$$\int f \left( u \right) \, du = F \left(u\right) + c$$
+then
+$$\int f \left( g \left( x \right) \right) \cdot g' \left( x \right) \, dx = F \left( g \left( x \right) \right) + c$$ 
+Thus, we have the substitution
+$$u = g \left( x \right) \qquad du = g' \left( x \right) \, dx$$
+that transforms the integral
+$$\int f \left( g \left( x \right) \right) \cdot g' \left( x \right) \, dx$$
+into
+$$\int f \left( u \right) \, du$$</p>
+
+<h2 class="article-title">Example</h2>
+<p class="fenix">
+Suppose we want to evaluate 
+$$\int \dfrac{x}{1+x^4} \, dx$$
+Let's try with
+$$u= x^2 \qquad \qquad du = 2x \, dx \implies \frac{1}{2}du = x \, dx$$
+The integral then becomes
+$$\frac{1}{2} \int \frac{du}{1+u^2} \, = \frac{1}{2} \tan^{-1} \left(x^2 \right) + c$$</p>

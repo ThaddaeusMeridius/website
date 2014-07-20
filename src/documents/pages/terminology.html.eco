@@ -1,0 +1,20 @@
+```
+title: Style Guide
+layout: default
+tags: ['styleguide','terminology', 'lowermenu']
+```
+<p class="fenix">
+Consistency is key, and I will do my best to keep everything on this site consistent across all topics, in regard to mathematical notation. Below is how I will be presenting that notation.
+<br>
+<br>
+All vectors will be bold and have an arrow above them
+$$\vec{\mathbf{F}}, \vec{\mathbf{a}}$$
+
+All matrices will be capital letters in either the roman or greek alphabet
+$$\Psi, A$$
+
+Real or Euclidean space will have the same notation in blackboard, unless needed to emphasize its Euclidean nature
+$$\mathbb{R}^3$$ 
+
+
+</p>

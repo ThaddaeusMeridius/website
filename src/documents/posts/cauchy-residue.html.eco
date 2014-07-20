@@ -1,0 +1,11 @@
+```
+title: Cauchy Residue Theorem
+layout: post
+tags: ['integral','calculus','analytic','c','complexanalysis','complex']
+```
+<p>
+If a function, $f$, is analytic inside and on $C$, a simple closed contour, except for a finite number of singular points inside $C$, then
+
+$$
+\int_C f \left( z \right) \ dz = 2 \pi i \sum_{k=1}^{n} \mathrm{Res}_{z=z_k} f \left( z \right) 
+$$</p>

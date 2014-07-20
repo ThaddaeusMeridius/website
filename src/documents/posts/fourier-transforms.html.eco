@@ -1,0 +1,21 @@
+```
+title: Fourier Transforms
+layout: post
+tags: ['integral','calculus','analytic','f','functionalanalysis']
+```
+<p>
+The Fourier transform of a real or complex valued function $f \( t \)$ is defined by
+
+$$F \( x \) = \frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{\infty} f \(t \) e^{ixt} \ dt$$
+
+<h2 class="article-title">Fourier Cosine and Sine Transforms</h2>
+
+$$
+F_c \( x \) = \sqrt{\frac{2}{\pi}} \int_0^{\infty} f \( t \)
+\cos{ \( xt \) } \ dt 
+$$
+
+$$
+F_s \( x \) = \sqrt{\frac{2}{\pi}} \int_0^{\infty} f \( t \) \sin{\( xt \)} \ dt
+$$
+</p>

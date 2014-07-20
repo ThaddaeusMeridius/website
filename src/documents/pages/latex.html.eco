@@ -1,0 +1,27 @@
+```
+title: ${\LaTeX}$
+layout: default
+tags: ['latex','math','lowermenu']
+```
+
+<div class="article-list">
+	<div id="introduction-principles" class="article">
+	    <div class="article-content">
+	        <p class="fenix" style="line-height:2;">${\LaTeX}$, pronounced as "Lay-tek", is <i><b>the</b></i> markup language to use for typesetting mathematics. The easiest way to start using ${\LaTeX}$ is to first install <a href="miktex.org">MiKTeX</a>, then uses these guides and links to help get you started:
+	        <br>
+	        <br>
+	        <ul style="padding-left: 46px;line-height: 2;">
+	            <li><a href="https://www.tug.org/texworks/">TeXworks - ${\LaTeX}$ Editor</a>
+	            </li>
+	            <li><a href="http://www.lyx.org/">LyX - A powerful WYSIWYG document drocessor that supports ${\LaTeX}$</a>
+	            </li>
+	            <li><a href="http://en.wikibooks.org/wiki/LaTeX">${\LaTeX}$ WikiBooks Guide</a>
+	            </li>
+	            <li><a href="http://www.stdout.org/~winston/latex/latexsheet.pdf">${\LaTeX}$ Cheat Sheet PDF #1</a>
+	            </li>
+	            <li><a href="http://users.dickinson.edu/~richesod/latex/latexcheatsheet.pdf">${\LaTeX}$ Cheat Sheet PDF #2</a>
+	            </li>
+	        </ul>
+	    </div>
+	</div>
+</div>

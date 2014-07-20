@@ -1,0 +1,10 @@
+```
+title: Cauchy's Integral Formula
+layout: default
+tags: ['complex','c','complexanalysis']
+```
+ <p>
+If $f(z)$ is continuous within and on a simple closed contour $C$ and analytic within $C$, and if $z_0$ is a point within $C$, then
+$$f(z_o)= \frac{1}{2 \pi i} \int_C \frac{f(z)}{z-z_0} \ dz$$
+and
+$$f^{(n)}(z_0)= \frac{n!}{2 \pi i} \int_C \frac{f(z)}{(z-z_0)^{n+1}} \ dz, \ \ n=1,2,3,...,$$</p>

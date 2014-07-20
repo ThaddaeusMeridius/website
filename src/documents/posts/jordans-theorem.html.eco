@@ -1,0 +1,7 @@
+```
+title: Jordan's Theorem
+layout: default
+tags: ['complex','j','complexanalysis','analytic']
+```
+<p>
+Any simple closed contour $C$ divides $\mathbb{C}$ into two open domains that have $C$ as common boundary. One of these domains is bounded and is called the interior domain of $C$, the other is unbounded and is called the exterior domain of $C$.</p>

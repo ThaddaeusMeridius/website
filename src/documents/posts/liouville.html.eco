@@ -1,0 +1,22 @@
+```
+title: Liouville's Theorem
+layout: default
+tags: ['analytic', 'l','diffeq','pde']
+```
+<p>
+If $\Delta f =0$ and $f \gt 0 $ on $\mathbb{R}^n$, then $f$ is constant.
+<br>
+<br>
+<b>Corollary 1</b>
+<br>
+<br>
+If $\Delta f = 0$ and $f$ is bounded on $\mathbb{R}^n$, then $f$ is constant.
+<br>
+<br>
+<b>Corollary 2</b>
+<br>
+<br>
+If $f$ is bounded and holomorphic on $\mathbb{C}$, then $f$ is constant.</p>
+<br>
+<br>
+<p>Essentially, any bounded, entire function is a constant</p>

@@ -1,0 +1,13 @@
+```
+title: The Wave Equation
+layout: default
+tags: ['diffeq','wave','waveequation','w','analytic','pde']
+```
+<p class="fenix">
+In $\mathbb{R}^2$, with $x,y$ at time $t$, the wave equation is
+$$\dfrac{\partial^2 y}{\partial x^2} - c \, \dfrac{\partial^2 y}{\partial t^2} = 0$$
+where $c$ is a positive number.
+<br>
+<br>
+In $\mathbb{R}^n$, with initial condition $y \left( x_1, \dots, x_n,0 \right) = f \left( x_1, \dots, x_n \right)$, the wave equation becomes
+$$\Delta \, y \left( x_1, \dots, x_n, t \right) - c \, \dfrac{\partial^2 y}{\partial t^2}=0$$</p>

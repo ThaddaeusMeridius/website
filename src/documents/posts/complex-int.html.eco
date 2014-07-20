@@ -1,0 +1,7 @@
+```
+title: Complex Integration
+layout: post
+tags: ['analytic','complex','c','complexanalysis']
+```
+
+$$\int_C f(z) \ dz = \int_a^b f\left( z \left( t \right) \right) \left( x' \left( t \right) + iy' \left( t \right) \right) \ dt$$

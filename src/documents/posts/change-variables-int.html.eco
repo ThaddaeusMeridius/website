@@ -1,0 +1,26 @@
+```
+title: Change of Variables for Integrals
+layout: default
+tags: ['integral','changeofvariable','analytic','c']
+```
+
+<p class="fenix">
+Sometimes it easier to change from Cartesian coordinates to Polar coordinates when evaluating certain integrals. If we wanted to evaluate
+$$\iint_R x^2 + y^2 \,dA$$
+It is much easier to do so in polar coordinates. This involves introducing the new variable $r$ and $\theta$, together with the equations relating them to $x,y$ in both the forward and backward directions
+$$r = \sqrt{x^2+y^2}, \ \ \ \ \ \ \ \theta=\tan^{-1} \left( y/x \right)$$
+$$x=r\cos{\theta}, \ \ \ \ \ \ \ y=r\sin{\theta}$$
+Using these we convert the integral from $f \left( x , y \right)$ to $g \left( r, \theta \right)$ which gives us 
+$$\iint_R g \left( r, \theta \right) \, r \,dr\,d\theta$$
+To see how we got there, specifically how we got $r \, dr \, d\theta$, let's consider a general case. Assume we are changing from $x,y$ to $u,v$ where
+$$u = u \left( x,y \right), \qquad v=v\left( x,y \right)$$
+$$x= x \left( u,v \right), \qquad y=y \left( u,v \right)$$
+So far we now have 
+$$\iint_R g \left(u,v \right) \, dA$$
+We still have to find $dA$ and $R$. To find $dA$, we use the <b>Jacobian</b> 
+$$\dfrac{\partial \left(x,y \right)}{\partial \left(u,v \right)} = \left| \begin{matrix} x_u & x_v \\ y_u & y_v \end{matrix} \right|$$
+The formula then becomes
+$$dA = \left| \dfrac{\partial \left(x,y \right)}{\partial \left(u,v \right)} \right| \, du \, dv$$
+Now we have
+$$\iint_R g \left(u,v \right) \, \left| \, \dfrac{\partial \left(x,y \right)}{\partial \left(u,v \right)} \, \right| \, du \, dv $$
+To find $R$ we have to orient ourselves with the level curves of our new coordinates. This requires some geometric intuition.</p>

@@ -1,0 +1,36 @@
+```
+title: Fourier Series
+layout: default
+tags: ['integral','fourier','analytic','functionalanalysis','f']
+```
+
+<p>
+	Fourier Series are used to express a periodic functions as an infinite sum of sines and/or cosines. They are extremely helpful in solving partial differential equations.</p>
+
+<h2 class="article-title">Definition</h2>
+<p>
+A function $f: \mathbb{R} \to \mathbb{R}$ is periodic with period $L$ if, for all $x$, $\ f\left(x + L \right) = f \left(x\right)$
+<br>
+<br>
+In other words, in every $L$ units, the function must start to repeat itself. An example is the common $\sin{x}$ and $\cos{x}$ who have a period of $2\pi$
+<br>
+<br>
+If we have a period of $2L$, our Fourier series is
+
+$$\bbox[10px,border:2px solid red]{\dfrac{a_0}{2} + \sum_{n=1}^{\infty} \left[ a_n \cos{\left( \dfrac{n \pi x}{L} \right)} + b_n \sin{\left( \dfrac{n \pi x}{L} \right)} \right]}$$</p>
+
+<p>
+For a period of $2\pi$, we have a series of the form
+$$\dfrac{a_0}{2} + \sum_{n=1}^{\infty} \, \left[ a_n \cos{\left( nx\right)} + b_n \sin{\left( nx\right)} \right]$$
+where
+$$\begin{align}
+a_n &= \dfrac{1}{\pi} \int_{-\pi}^{\pi} f \left( x \right) \cos{\left( nx \right)} \, dx \\ \\
+b_n &= \dfrac{1}{\pi} \int_{-\pi}^{\pi} f \left( x \right) \sin{\left( nx \right)} \, dx 
+\end{align}$$
+These are called the Fourier coefficients.
+<br>
+<br>
+We can also write Fourier series differently. Using the fact that $e^{ix} = \cos x + i\sin x$, we can express the series as
+$$\sum_{n=-\infty}^{\infty} c_n e^{inx}$$
+where
+$$c_n = \frac{1}{2\pi} \int_{-\pi}^{\pi} f \left(x \right) e^{inx} \, dx$$</p>

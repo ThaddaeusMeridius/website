@@ -1,0 +1,12 @@
+```
+title: Laplace Transform
+layout: post
+tags: ['integral','calculus','analytic','l','functionalanalysis']
+```
+<p>
+Suppose $f \( t \)$ is a real or complex valued function and $s$ is a real or complex parameter. The Laplace transform of $f$ is defined by
+
+$$
+\mathcal{L} \( f \( t \);  s  \) = \int_0^{\infty} e^{-st} f \(t \) \ dt
+$$
+</p>

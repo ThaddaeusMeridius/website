@@ -1,0 +1,47 @@
+```
+title: Algebraic Properties of Complex Functions
+layout: post
+tags: ['analytic','complex','a','complexanalysis']
+```
+<div style="display:none;">
+$\def\RR{\mathbb{R}}$
+$\def\ZZ{\mathbb{Z}}$
+$\def\NN{\mathbb{N}}$
+$\def\CC{\mathbb{C}}$
+$\newcommand{\v}[1]{\vec{\mathbf{#1}}}$
+$\newcommand{\(}[1]{\left( #1 \right)}$
+$\newcommand{\[}[1]{\left[ #1 \right]}$
+$\newcommand{\<}[1]{\left< #1 \right>}$
+$\newcommand{\|}[1]{\left| #1 \right|}$
+$\newcommand{\lbr}[1]{\left\lbrace #1 \right\rbrace}$
+$\newcommand{\f}[1]{f \left( #1 \right)}$
+$\newcommand{\g}[1]{g \left( #1 \right)}$
+$\def\re{\mathcal{Re}}$
+$\def\im{\mathcal{Im}}$
+</div>
+<p>
+
+
+
+$$\bar{z} = x - iy$$
+
+$$|\bar{z}| = |z|$$
+
+If $z_1 = x_1 + iy_1, z_2 = x_2 +iy_2$, then
+$$z_1 \pm z_2 = x_1 \pm x_2 + i \left( y_1 \pm y_2 \right)$$
+$$z_1z_2 = x_1x_2 - y_1y_2 + i \left( x_1y_2 + x_2y_1 \right)$$
+$$\frac{z_1}{z_2} = \frac{z_1 \bar{z_2}}{|z_2|^2} = \frac{x_1x_2 + y_1y_2 + i \left( x_2y_1 - x_1y_2 \right)}{x_2^2 + y_2^2}$$
+$$|z_1z_2| = |z_1| |z_2|$$
+$$\left| \frac{z_1}{z_2} \right| = \frac{\left| z_1 \right|}{\left| z_2 \right|}$$
+$$z_1 - z_2 = \({x_1-x_2} + i\, \({y_1-y_2}$$
+$$\frac{z_1+z_2}{z_3} = \({z_1 + z_2}z_3^{-1}=z_1z_3^{-1} + z_2z_3^{-1} = \frac{z_1}{z_3}+\frac{z_2}{z_3}$$
+$$\|{z} = \sqrt{x^2 + y^2}$$
+$$\|{z_1-z_2} = \sqrt{\({x_1-x_2}^2+\({y_1-y_2}^2}$$
+$$\|{z}^2= \({\re\, z}^2 + \({\im\, z}^2$$
+$$\re\, z \leq \|{\re\,z} \leq |z| \qquad \mathrm{and} \qquad \im\,z \leq \|{\im\,z} \leq |z|$$
+$$\|{z_1+z_2} \leq \|{z_1} + \|{z_2}$$ 
+$$\|{z_1+z_2} \geq \|{\|{z_1} - \|{z_2}}$$
+$$\|{z_1+z_2} \geq \|{z_1}-\|{z_2}$$
+$$\|{z_1 \pm z_2} \leq \|{z_1} + \|{z_2}$$
+$$\|{z_1 \pm z_2} \geq \|{\|{z_1}-\|{z_2}}$$ 
+</p>

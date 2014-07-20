@@ -1,0 +1,31 @@
+```
+title: Residue Calculus
+layout: default
+tags: ['integral','residue','r','complexanalysis','analytic']
+```
+
+<p>
+We can easily compute otherwise difficult integrals using the fact that
+$$\int_{-\infty}^{\infty} \dfrac{p\left(x\right)}{q\left(x\right)} \, dx = \lim_{r \to \infty} \int_{C_r} \dfrac{p\left(z\right)}{q\left(z\right)} \, dz = 2\pi i \sum_{k=1}^{v} \mathrm{Res} \, \left. \dfrac{p\left(z\right)}{q\left(z\right)} \right|_{z\,=\,z_k}$$</p>
+
+<h2 class="article-title">Example</h2>
+<p>
+Suppose we wish to evaluate 
+$$\int_{-\infty}^{\infty} \dfrac{x^2}{1+x^4} \, dx$$
+This is incredibly difficult using a standard way of integration, but using residues it is extremely less difficult.
+<br>
+The zeroes of $q\left(z\right) = 1 + z^4$ are the fourth roots of $-1$/ Of these, only
+$$z_1 = \dfrac{1+i}{\sqrt{2}}, \qquad z_2= \dfrac{-1+i}{\sqrt{2}}$$
+lie in the upper half plane. Writing
+$$\dfrac{z^2}{1+z^4} = \dfrac{z^2}{\left( z-z_1 \right)\left( z-z_2 \right)\left( z^2 + \sqrt{2}i\,z -1 \right)}$$
+the residue at $z_1= \dfrac{1+i}{\sqrt{2}}$ is
+
+$$\begin{align}
+\lim_{z  \to z_1} \left(z-z_1\right) \dfrac{z^2}{\left( z-z_1 \right)\left( z-z_2 \right)\left( z^2 + \sqrt{2}i\,z -1 \right)} &= \lim_{z\to z_1} \dfrac{z^2}{\left( z-z_2 \right)\left( z^2 + \sqrt{2}i\,z -1 \right)} \\ \\ \\
+&= \dfrac{i}{\left( \tfrac{1+i}{\sqrt{2}} - \tfrac{-1+i}{\sqrt{2}} \right) \left( i + \sqrt{2} i \tfrac{1+i}{\sqrt{2}}-1 \right)} \\ \\ \\
+&= \dfrac{i}{2 \sqrt{2} \left( i-1 \right)} \\ \\ \\
+&= \dfrac{1-i}{4\sqrt{2}}
+\end{align}$$
+and doing the same for the residue at $z_2= \dfrac{-1+i}{\sqrt{2}}$ we get  $\dfrac{-1-i}{4\sqrt{2}}$
+The integral is then
+$$\int_{-\infty}^{\infty} \dfrac{x^2}{1+x^4} \, dx = 2 \pi i \left( \dfrac{1-i}{4\sqrt{2}} + \dfrac{-1-i}{4\sqrt{2}} \right) = \dfrac{\pi}{\sqrt{2}}$$</p>

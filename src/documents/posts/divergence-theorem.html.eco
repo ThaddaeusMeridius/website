@@ -1,0 +1,81 @@
+```
+title: Divergence Theorem
+layout: default
+tags: ['integral','calculus','analytic','d']
+```
+$\def\vector{\bf\vec}$
+$\def\({\left(}$
+$\def\){\right)}$
+$\def\{{\left\lbrace}$
+$\def\}{\right\rbrace}$
+$\def\[{\left[}$
+$\def\]{\right]}$
+<p class="fenix">
+Also known as Gauss' theorems or Ostrogradski's theorem. Where FTC is to $\mathbb{R}$, Green's theorem is to $\mathbb{R}^2$, and divergence theorem is to $\mathbb{R}^3$. Divergence theorem relates surface integrals over the boundary of a regular region in $\mathbb{R}^3$ to volume integrals over the region itself. It is a special case of Stokes' theorem.
+
+$$\iint_{\partial R} \vec{\mathbf{F}} \cdot \vec{\mathbf{n}} \ dA = \iiint_R \mathrm{div} \vec{\mathbf{F}} \ dV$$
+
+This tells us what happens to a vector field, $\vec{\mathbf{F}}$, as it flows through an object. In other words, how it's flux (flow) through a boundary of a surface, relates to it's behaviour inside the vector field.
+
+Pressurized oxygen tanks are an example of the divergence theorem. If we have a sturdy canister that neither expands nor breaks when we fill oxygen into it, the oxygen then compresses. The air going in is the vector field, where the oxygen tank is the closed surface.</p>
+
+<h2 class="article-title">Example</h2>
+<p class="fenix">
+Consider a sphere with radius $3$ and centered at the origin, $x^2+y^2+z^2=3 $, and the vector field $\vec{\mathbf{F}} = \left< xy^2, \ yz^2, \ x^2z \right>$
+
+
+<img src="/images/div-plot.svg">
+and we wish to evaluate 
+$$\iint_C \vec{\mathbf{F}} \cdot d \vec{\mathbf{S}}$$
+using the divergence theorem, which gives us
+$$\iiint_R \( y^2+z^2+x^2 \) \ dV$$
+where $R$ is our sphere of radius $3$.
+Changing to spherical coordinates, we see that our sphere has the following parameters
+$$0 \leq \rho \leq 3$$ $$0 \leq \theta \leq 2\pi$$ $$0 \leq \phi \leq \pi$$ $$y^2+z^2+x^2=x^2 + y^2+z^2=\rho^2$$
+
+The integral becomes
+$$\int_0^3 \int_0^{2\pi} \int_0^{\pi} \rho^4 \sin{\( \phi \)} \ d\phi \ d\theta \ d\rho$$
+Evaluating, we get
+
+$$
+\begin{align}
+\int_0^3 \int_0^{2\pi} \int_0^{\pi} \rho^4 \sin{\( \phi \)} \ d\phi \ d\theta \ d\rho &= \int_0^3 \int_0^{2\pi} \[ -\rho^4 \cos{\( \phi \)} \]_{0}^{\pi} \\ \\
+&= \int_0^3 \int_0^{2\pi} 2 \rho^4 \ d\theta \ d\rho \\ \\
+&= \int_0^3 4\pi \rho^4 \ d\rho \\ \\
+&= \left. \frac{4\pi \rho^5}{5} \: \right|_0^3 \\ \\
+&= \frac{972\pi}{5}
+\end{align}$$
+</p>
+
+<h2 class="article-title">Exercises</h2>
+<p class="fenix">
+<ol>
+<li>
+Evaluate 
+$$\iint_S \vec{\mathbf{F}} \cdot \vec{\mathbf{n}} \: dA$$
+where $\ \vec{\mathbf{F}} \( x, y, z \) = x^2 \: \vec{\mathbf{i}} + y^2 \: \vec{\mathbf{j}} + z^2 \: \vec{\mathbf{k}}$ and $S$ is the surface of the cube $0 \leq x,y,z\leq a$
+</li>
+<hr>
+<li>
+Evaluate 
+$$\iint_S \vec{\mathbf{F}} \cdot \vec{\mathbf{n}} \: dA$$
+where $\ \vec{\mathbf{F}} \( x, y, z \) = \( \dfrac{x}{a^2} \) \: \vec{\mathbf{i}} + \( \dfrac{y}{b^2} \) \: \vec{\mathbf{j}} + \( \dfrac{z}{c^2} \) \: \vec{\mathbf{k}}$ and $S$ is the ellipsoid $\( \dfrac{x}{a} \)^2 + \( \dfrac{y}{b} \)^2 + \( \dfrac{z}{c} \)^2 = 1$
+</li>
+<hr>
+<li>
+Evaluate 
+$$\iint_S \vec{\mathbf{F}} \cdot \vec{\mathbf{n}} \: dA$$
+where $\ \vec{\mathbf{F}} \( x, y, z \) = x^2 \: \vec{\mathbf{i}} - 2xy \: \vec{\mathbf{j}} + z^2 \: \vec{\mathbf{k}}$ and $S$ is the surface of the cylindrical solid $\left\lbrace \(x,y,z\) : \( x,y \) \in W, 1 \leq z \leq 2 \right\rbrace$ where $W$ is a smoothly bounded regular region in the plane with area $A$
+</li>
+
+<li>
+
+</li>
+
+<li>
+
+</li>
+
+</ol>
+</p>
+

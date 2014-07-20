@@ -1,0 +1,36 @@
+```
+title: Links
+layout: default
+tags: ['links', 'lowermenu']
+```
+
+<p class="fenix">
+	<ul style="list-style:none;line-height:2;">
+		<li><a href="http://docs.mathjax.org/en/latest/index.html">MathJax Docs</a></li>
+		<li><a href="https://stackedit.io/">StackEdit</a></li>
+		<li><a href="https://stackedit-beta.herokuapp.com">StackEdit 4 Beta</a></li>
+		<li><a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">MathJax Guide</a></li>
+		<li><a href="https://www.writelatex.com/">write ${\LaTeX}$</a></li>
+		<li><a href="http://www.howtotex.com/">how to ${\TeX}$</a></li>
+		<li><a href="http://mathinsight.org/">MathInsight</a></li>
+		<li><a href="http://www.synechism.org/wp/">Synechism</a></li>
+		<li><a href="http://artsci.drake.edu/grout/doku.php/teaching_resources">Jason Grout Resources</a></li>
+		<li><a href="https://github.com/unconed/MathBox.js/">MathBox.js</a></li>
+		<li><a href="http://people.math.gatech.edu/~cain/notes/calculus.html">Multivariable Calculus - Cain & Herod</a></li>
+		<li><a href="http://mathworld.wolfram.com/">MathWorld</a></li>
+		<li><a href="http://personalpages.to.infn.it/~zaninett/pdf/">Zaninetti PDFs</a></li>
+		<li><a href="http://acko.net/files/mathbox/MathBox.js/examples/Empty.html">MathBox Sandbox</a></li>
+		<li><a href="http://www.warrenweckesser.net/vfgen/index.html">VFGen</a></li>
+		<li><a href="https://typekit.com/fonts/museo">Museo Font</a></li>
+		<li><a href="https://typekit.com/fonts/adelle-web">Adelle Font</a></li>
+		<li><a href="http://kevinmehall.net/p/equationexplorer/vectorfield.html">Online Vector Field Grapher</a></li>
+		<li><a href="https://dribbble.com/shots/951197-TAS-Monogram">TAS Monogram</a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+		<li><a href="#"></a></li>
+	</ul>
+
+</p>

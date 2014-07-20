@@ -1,0 +1,8 @@
+```
+title: Powers of Complex Functions
+layout: post
+tags: ['analytic','complex','p','complexanalysis']
+```
+
+<p>
+	$$z^n = \left( x^n - {{n}\choose{2}} x^{n-2}y^2 + {{n}\choose{4}}x^{n-4}y^4 - \cdots \right) + i \left( {{n}\choose{1}}x^{n-1} - {{n}\choose{3}}x^{n-3}y^3 \right)$$</p>

@@ -1,0 +1,99 @@
+```
+title: Green's Theorem
+layout: default
+tags: ['integral','calculus','realfunctions','analytic','g']
+```
+<div class="article-list">
+            <!-- 3 COLUMN ARTICLE PLACE HOLDERS -->            	
+                    <div id="introduction-principles" class="article">
+                        <h2 class="article-title">
+                            Principles
+                        </h2>
+                        <div class="article-content">
+                            <div class="module-list">
+                                <div id="principles-principles-1" style="line-height:2;font-size: 14pt;">
+                                    <p class="fenix">In layman's terms, Green's Theorem says that the integral of something over the boundary of a region equals the integral of something else over the region itself.
+
+                                        When we talk about the positive  orientation on the boundary of $S$, think of taking an arrow tangent to a circle and pointing in the positive direction of the curve, now when we turn it $90^{\circ}$ clockwise it should be pointing <i>out</i> of the circle.</p>
+                                    <br>
+                                    <br>    
+                                    <ul style="list-style:none;">    
+                                        <li>$S$: regular region in $\mathbb{R}$</li>
+                                        <li>$\partial S$: piecewise smooth boundary of $S$</li>
+                                        <li>$\vec{\mathbf{F}}$: vector field of class $C^1$ on $\bar{S}$</li>
+                                    </ul>
+                                    <br>
+                                    <br>
+                                    <p class="fenix">
+                                    Then:
+                                    <br>
+                                    <br>
+                                    $$\int_{\partial S} \vec{\mathbf{F}} \cdot d\vec{\mathbf{x}} = \iint_S \left( \frac{\partial F_2}{\partial x_1} - \frac{\partial F_1}{\partial x_2} \right) \ dA$$
+                                    <br>
+                                    Now if we let $\vec{\mathbf{F}}= \left( P, Q \right)$ and $\vec{\mathbf{x}} = (x, y)$, then
+                                    $$\int_{\partial S} P \ dx + Q \ dy = \iint_S \left(  \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) \ dA$$
+                                    <br>
+                                    Another way to see Green's Theorem is when we take the normal component of  $\mathbf{F}$, which is just the tangential component of $\mathbf{F}$ when it's rotated $90^{\circ}$ counterclockwise. 
+                                    <br>
+                                    Let $\vec{\mathbf{n(x)}}$ be the unit normal vector to $\partial S$ for all $\vec{\mathbf{x}}$ belonging to $\partial S$, then,
+                                    $$\int_{\partial S} \vec{\mathbf{F}} \cdot \vec{\mathbf{n}} \ ds = \iint_S \left(  \frac{\partial F_1}{\partial x_1} + \frac{\partial F_2}{\partial x_2} \right)$$
+                                    <br>
+                                    In vector form, Green's theorem looks like
+                                    $$\int_{\partial S} \vec{\mathbf{F}} \cdot d \vec{\mathbf{x}} = \iint_S \left( \nabla \times \vec{\mathbf{F}} \right) \cdot d \vec{\mathbf{x}}$$
+                                    <br>
+                                    Green's theorem can also be used to find the area of $S$ by way of line integrals. The area of $S$ is given by 
+                                    $$A = \iint_S dA$$
+                                    <br>
+                                    To make it simple, let's conveniently choose 
+                                    <br>
+                                    $$  \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}  = 1$$
+                                    Now, Green's theorem reduces to
+                                    <br>
+                                    $$\int_{\partial S} P \ dx + Q \ dy = \iint_S 1 \ dA$$
+                                    So,
+                                    $$\int_{\partial S} P \ dx + Q \ dy = A$$
+                                    The area of $S$ can then be found by integrating
+                                    $$A = \frac{1}{2} \int_{\partial S} \left( x \ dy - y \ dx \right)$$
+                                    We get this result since 
+                                    $$\frac{d}{dx} \left( \frac{x}{2} \right) = \frac{1}{2} \ \ \mathrm{and} \ \ \frac{d}{dy} \left( -\frac{y}{2} \right) = -\frac{1}{2}$$
+                                    So, from above,
+                                    $$\frac{1}{2} - \left( -\frac{1}{2} \right) = 1$$
+                                    <br>
+                                    <br>
+                                    Green's theorem has close relationships to Stokes' theorem and the divergence theorem.</p>
+                                    <br>
+                                    <br>
+                                    <div id="exercises">
+                                        <h2 class="article-title">
+                                            Exercises
+                                        </h2>
+                                        <p>
+                                            <ol>
+                                                <li>Using Green's theorem, evaluate 
+                                                $$\int_C \left\lbrack  \left(  x^2 + 10xy + y^2 \right) \ dx + \left(  5x^2 + 5xy \right) \ dy \right\rbrack$$
+                                                where $C$ is the square with the vertices $\left(  0, 0 \right), \left(  2, 0 \right), \left(  0, 2 \right),$ and $\left( 2, 2  \right)$, oriented counter-clockwise.</li>
+                                                <br>
+                                                <hr>
+                                                <br>
+                                                <li>Using Green's theorem, evaluate
+                                                $$\int_{\partial S} \left(  3x^2 \sin{y^2} \ dx + 2x^3y \cos{y^2} \ dy  \right)$$
+                                                where $S$ is any regular region with piecewise smooth boundary.</li>
+                                                <br>
+                                                <hr>
+                                                <br>
+                                                <li>Evaluate directly and then use Green's theorem for the integral
+                                                $$\int_{\partial S} \left(  xy^2 \ dy - x^2y \ dx  \right)$$
+                                                where S is the annulus $1 \leq x^2 + y^2 \leq 4$.</li>
+                                                <br>
+                                                <hr>
+                                                <br>
+                                                <li>For the integral
+                                                $$\int_C \left\lbrack  y^3 \ dx + \left(  3x - x^3  \right) \ dy  \right\rbrack$$
+                                                find $C$ that maximizes it.</li>
+                                            </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>

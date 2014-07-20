@@ -1,0 +1,11 @@
+```
+title: Harmonic Functions
+layout: default
+tags: ['complex','h','complexanalysis','analytic']
+```
+<p>
+If $f(z)= u(x, y) + iv(x,y)$ is analytic in an open domain $D$, then $u$ and $v$ are harmonic in $D$, that is,
+
+$$u''_x + u''_y = v''_x + v''_y = 0$$
+or in polar form
+$$u''_r + \frac{1}{r} u'_r + \frac{1}{r^2} u''_{\theta} = 0$$</p>

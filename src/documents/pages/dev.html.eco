@@ -1,0 +1,82 @@
+---
+layout: 'default'
+title: Test/Dev Page
+---
+<style>
+
+.button-main {
+	width: 5em;
+	height: 5em;
+	background-color: #999;
+	background-image: linear-gradient(180deg, #CCC, #999);
+	border-top: 3px solid #CCC;
+	border-right: 3px solid #CCC;
+	border-left: 4px solid #666;
+	border-bottom: 4px solid #666;
+	border-radius: 1em;
+	float: left;
+	margin: 3em;
+	text-decoration: none;
+	box-shadow:  -.1em .1em 0 #000,
+				 -.2em .2em 0 #000,
+				 -.3em .3em 0 #000,
+				 -.4em .4em 0 #333,
+				 -.5em .5em 0 #333,
+				 -.6em .6em 0 #333,
+				 -.7em .7em 0 #333,
+				 -.9em .9em 0 #333,
+				 -1em 1em 0 #333,
+				 -1.1em 1.1em 0 #333,
+				 -1.2em 1.2em 0 #333;
+	transition: box-shadow 0.3s,
+				border-top 0.3s,
+				border-right 0.3s;
+}
+
+.button-main:hover, .button-main:focus {
+	box-shadow: .1em -.1em 0 #333,
+				.2em -.2em 0 #333,
+				-.1em .1em 0 #333,
+				-.2em .2em 0 #333,
+				-.3em .3em 0 #333,
+				inset -.1em -.1em 2em #FFF,
+				-.1em -.1em 2em #666;
+	border-top: 3px solid #666;
+	border-right: 3px solid #666;
+}
+
+.button-inside {
+	width: 4em;
+	height: 4em;
+	margin: .5em;
+	border-radius: .8em;
+	background-color: #CCC;
+	background-image: linear-gradient(45deg, #CCC, #999);
+	box-shadow: inset -.15em .15em 0 #666,
+				inset .1em -.1em 0 #CCC;
+}
+.button-inside img {
+	width: 80%;
+}
+
+</style>
+<body>
+        <div class="button-main">
+        	<div class="button-inside">
+        		<img src="/images/logo.svg">
+            </div>
+        </div>
+        
+        
+        <div class="button-main">
+        	<div class="button-inside">
+            	<h1>B</h1>
+            </div>
+        </div>
+        
+        <div class="button-main">
+        	<div class="button-inside">
+            	<h1>C</h1>
+            </div>
+        </div>
+</body>

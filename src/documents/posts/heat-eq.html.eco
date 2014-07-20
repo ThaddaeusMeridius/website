@@ -1,0 +1,16 @@
+```
+title: The Heat Equation
+layout: default
+tags: ['diffeq','heat','heatequation','pde','analytic','h']
+```
+
+<p class="fenix">
+In $\mathbb{R}^3$, with $x,y,z$, let
+$$u \left( x,y,z,t \right) = \mathrm{temperature \ at \ time \ } t \ \mathrm{at \ } \left( x,y,z \right)$$
+The heat equation is 
+$$\dfrac{\partial^2 u}{\partial x ^2} + \dfrac{\partial^2 u}{\partial y^2} + \dfrac{\partial^2 u}{\partial z^2} = c \, \dfrac{\partial u}{\partial t}$$
+where $c$ is a constant.
+<br>
+<br>
+Or more simply
+$$\Delta \, u = c \, \dfrac{\partial u}{\partial t}$$</p>

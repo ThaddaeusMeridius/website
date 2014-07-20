@@ -1,0 +1,10 @@
+```
+title: Cauchy-Riemann Equations
+layout: post
+tags: ['analytic','complex','c','complexanalysis']
+```
+<p>
+If $f' \left( z \right)$ exists at $z= x+iy$ and $f \left( z \right) = u \left( x, y \right) + iv \left( x,y \right)$, then
+$$\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \ \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$$
+or more simply
+$$u_x'=v_y', \ u_y'=-v_x'$$</p>

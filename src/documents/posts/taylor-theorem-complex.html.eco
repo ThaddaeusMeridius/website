@@ -1,0 +1,14 @@
+```
+title: Taylor's Theorem of Complex Variables
+layout: default
+tags: ['diffcalc','taylor','series','numericalanalysis','analytic','t','approx','expansions','complexanalysis']
+```
+
+<p>
+Suppose that a function $f$ is analytic throughout a disk $\left| z-z_o \right| \lt R_0$ centered at $z_0$ and with radius $R_0$. Then $f \left( z \right)$ has the power series representation
+
+$$f \left( z \right) = \sum_{n=0}^{\infty} a_n \left( z- z_0 \right)^n \qquad \qquad \left| z-z_0 \right| \lt R_0 $$
+where 
+$$a_n = \dfrac{f^{\left(n\right)} \left(z_0 \right)}{n!} \qquad \qquad n = 0,1,2,\dots$$
+That is, the series converges to $f \left(z\right)$ when $z$ lies in the stated open disk. 
+</p>

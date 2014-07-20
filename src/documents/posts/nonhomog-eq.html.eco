@@ -1,0 +1,21 @@
+```
+title: Nonhomogeneous Equations
+layout: default
+tags: ['diffeq','nonhomogenous','nonhomogeneous','analytic','n','ode']
+```
+
+$\def\vector{\bf\vec}$
+$\def\({\left(}$
+$\def\){\right)}$
+$\def\{{\left\lbrace}$
+$\def\}{\right\rbrace}$
+$\def\[{\left[}$
+$\def\]{\right]}$
+
+<p class="fenix">
+$$y'' + f\( t \)y' + g \( t \)y = h \( t \)$$
+
+With general solution
+$$y= c_1y_1 \( t \) + c_2y_2 \( t \) + Y \( t \) $$
+Where $Y(t)$ is the particular solution found by using the method of undetermined coefficients or variation of parameters.
+</p>

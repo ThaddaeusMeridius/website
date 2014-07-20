@@ -1,0 +1,26 @@
+```
+title: The Laplacian Operator
+layout: default
+tags: ['laplacian', 'vectorcalc','analytic','l','diffeq','pde']
+```
+<p class="fenix">
+If $f(x, y, z)$ is a real-valued function, then the Laplacian of $f$ is
+$$\Delta f = \nabla \cdot \nabla f  \equiv \nabla^2 f$$
+
+So
+
+$$\Delta f = \frac{\partial^2 f}{\partial x^2} + \frac{\partial^2 f}{\partial y^2} + \frac{\partial^2 f}{\partial z^2}$$
+
+This is the divergence of the vector field $\nabla f$, the gradient of $f$. 
+
+If we have $\Delta f(s)$, the Laplacian of $f$ at the point $s$ is the rate at which the the average value of $f$ over spheres centered at $s$, deviates from $f(s)$ as the radius of the sphere grows. 
+
+Imagine blowing up a balloon, as we blow harder, $\Delta$ and $\nabla$ increase, until we can't blow any harder and $\Delta$ becomes $0$ and $\nabla$ is maximized. This is similar to the rate of acceleration and velocity from $\mathbb{R}^1$.
+
+In $\mathbb{R}^n$, the Laplacian becomes
+$$\Delta f = \sum\limits_{i=1}^n \frac{\partial^2}{\partial x_{i}^2}$$
+
+Scope of operators: 
+
+$$\nabla = \frac{\partial}{\partial x} \vec{\mathbf{i}} + \frac{\partial}{\partial y} \vec{\mathbf{j}} + \frac{\partial}{\partial z} \vec{\mathbf{k}}$$ 
+$$ \mathrm{div} f = \nabla f$$ $$\mathrm{div} \ \nabla f = \nabla \cdot \nabla f = \Delta f$$</p>
